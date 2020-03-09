@@ -1,0 +1,12 @@
+:root {
+  --brand-color: rebeccapurple;
+}
+
+body {
+  color: var(--brand-color);
+}
+
+// test PostCSS autoprefixer
+::placeholder {
+  color: var(--brand-color);
+}

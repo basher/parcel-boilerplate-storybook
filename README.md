@@ -1,0 +1,28 @@
+# Use Parcel to bundle UI
+
+## Boilerplate setup.
+
+Using Parcel bundler (instead of Webpack or Gulp) to handle
+
+* ES6+ transpilation.
+* Sass.
+* PostCSS.
+
+Additionally, configured
+
+* IE11 ponyfill for CSS variables.
+* ESLint, Stylelint, Prettier.
+* Git hooks.
+
+> Notes:
+> * Linter config files use recommended settings, plus some additional personal (opinionated) settings - e.g. `eslint-config-airbnb-base`.
+> * This repo is setup for raw JavaScript only - i.e. not TypeScript, or React/Angular/Vue.
+
+## Test in browser, and build
+
+* `npm start`
+* `npm build` creates minified static assets with map files in `dist` folder.
+
+## Storybook
+
+* To test [this Storybook bug](https://github.com/storybookjs/storybook/issues/10081).

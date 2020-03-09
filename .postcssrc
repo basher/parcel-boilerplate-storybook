@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "autoprefixer": true,
+    'postcss-sorting': {
+      'properties-order': 'alphabetical',
+    },
+  }
+}
