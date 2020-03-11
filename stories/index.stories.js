@@ -1,5 +1,5 @@
 export default {
-  title: 'Demo',
+  title: 'Standalone Demo',
 };
 
-export const Heading = () => '<h1>Hello World</h1>';
+export const StandaloneHeading = () => '<h1>Hello World</h1>';
