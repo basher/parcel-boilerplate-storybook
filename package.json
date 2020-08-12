@@ -6,19 +6,12 @@
   "author": "",
   "license": "ISC",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html",
-    "storybook": "parcel ./storybook.html --port 1337"
-  },
   "dependencies": {
-    "css-vars-ponyfill": "^2.1.2",
-    "node-sass": "^4.13.1"
+    "css-vars-ponyfill": "^2.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@storybook/html": "^5.3.14",
+    "@storybook/addon-a11y": "^6.0.4",
+    "@storybook/html": "^6.0.4",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "eslint": "^6.8.0",
@@ -26,9 +19,9 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.1",
+    "husky": "4.2.1",
     "lint-staged": "^10.0.2",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-nightly.357",
     "prettier": "1.19.1",
     "sass": "^1.25.0",
     "stylelint": "^13.0.0",
@@ -38,6 +31,12 @@
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.13.0",
     "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "storybook": "parcel ./storybook.html --port 1337"
   },
   "husky": {
     "hooks": {
@@ -53,5 +52,8 @@
       "stylelint --syntax=scss",
       "prettier --write"
     ]
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

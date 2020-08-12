@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Parcel UI</title>
+  <title>Parcel UI Storybook</title>
 </head>
 <body>
-  <h1>Using Parcel to bundle UI</h1>
-
+  <!-- <h1>Using Parcel to bundle UI</h1>
   <p>Testing...</p>
   <ul>
     <li>ES6+ transpilation.</li>
@@ -16,7 +15,13 @@
     <li>IE11 ponyfill for CSS variables.</li>
     <li>ESLint, Stylelint, Prettier.</li>
     <li>Git hooks.</li>
-  </ul>
+  </ul> -->
+  <div id="root"></div>
+  <script src="./storybook.ts"></script>
+  <div class="sb-errordisplay sb-wrapper">
+      <div id="error-message" class="sb-heading"></div>
+      <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>
+  </div>
 
   <script src="src/js/index.js"></script>
 </body>
