@@ -25,5 +25,6 @@ Additionally, configured
 
 ## Storybook
 
+* `npm run storybook`
 * To test [standalone Storybook preview bug](https://github.com/storybookjs/storybook/issues/10081).
 * To test [Storybook V6 a11y addon bug](https://github.com/storybookjs/storybook/issues/11929).
