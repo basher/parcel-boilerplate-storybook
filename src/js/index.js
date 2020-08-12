@@ -6,5 +6,5 @@ cssVars();
 
 // test ES6 transpilation
 const hello = 'hello';
-// eslint-disable-next-line no-alert
+// eslint-disable-next-line no-console
 console.log(hello);
