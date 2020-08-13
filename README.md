@@ -21,10 +21,10 @@ Additionally, configured
 ## Test in browser, and build
 
 * `npm start`
-* `npm build` creates minified static assets with map files in `dist` folder.
+* `npm run build` creates minified static assets with map files in `dist` folder.
 
-## Storybook
+## Test Storybook
 
 * `npm run storybook`
-* To test [standalone Storybook preview bug](https://github.com/storybookjs/storybook/issues/10081).
-* To test [Storybook V6 a11y addon bug](https://github.com/storybookjs/storybook/issues/11929).
+* Ref: [standalone Storybook preview bug](https://github.com/storybookjs/storybook/issues/10081).
+* Ref: [Storybook V6 a11y addon bug](https://github.com/storybookjs/storybook/issues/11929).
