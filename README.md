@@ -28,3 +28,4 @@ Additionally, configured
 * `npm run storybook`
 * Ref: [standalone Storybook preview bug](https://github.com/storybookjs/storybook/issues/10081).
 * Ref: [Storybook V6 a11y addon bug](https://github.com/storybookjs/storybook/issues/11929).
+* Ref: [Storybook V6 composition bug](https://github.com/storybookjs/storybook/issues/11892).
