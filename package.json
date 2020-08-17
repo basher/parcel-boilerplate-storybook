@@ -10,8 +10,8 @@
     "css-vars-ponyfill": "^2.1.2"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.0.4",
-    "@storybook/html": "^6.0.4",
+    "@storybook/addon-a11y": "^6.0.10",
+    "@storybook/html": "^6.0.10",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "eslint": "^6.8.0",

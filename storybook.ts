@@ -1,4 +1,4 @@
 import { configure } from '@storybook/html';
-import * as Heading from './stories/index.stories';
+import * as Button from './stories/index.stories';
 
-configure(() => [Heading], module);
+configure(() => [Button], module);
