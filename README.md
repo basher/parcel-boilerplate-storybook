@@ -26,9 +26,8 @@ Additionally, configured
 ## Test Storybook
 
 * `npm run storybook`, which does NOT open the Storybook UI in the browser.
-* You need to also `npm run storybook:preview` from the [Storybook preview wrapper repo](https://github.com/basher/parcel-boilerplate-storybook-preview).
+* You need to also run storybook from the [Storybook preview wrapper repo](https://github.com/basher/parcel-boilerplate-storybook-preview) - see the `README` for instructions.
 
-### Storybook issues
-* Ref: [standalone Storybook preview bug](https://github.com/storybookjs/storybook/issues/10081).
-* Ref: [Storybook V6 a11y addon bug](https://github.com/storybookjs/storybook/issues/11929).
-* Ref: [Storybook V6 composition bug](https://github.com/storybookjs/storybook/issues/11892).
+### Open Storybook issues & discussions
+* Ref: [validateDOMNesting bug](https://github.com/storybookjs/storybook/issues/12139).
+* Ref: [Storybook composition discussion](https://github.com/storybookjs/storybook/discussions/12103).
