@@ -10,3 +10,33 @@ body {
 ::placeholder {
   color: var(--brand-color);
 }
+
+// Button styles to test from external @storybook/HTML repo.
+.kb-button {
+  display: inline-block;
+  font-size: 1rem;
+
+  &--text {
+    background-color: white;
+    border: 2px solid;
+    border-color: inherit;
+    padding: 0.5em;
+  }
+
+  &--primary {
+    color: rebeccapurple
+  }
+
+  &--secondary {
+    color: darkolivegreen;
+  }
+
+  &--small {
+    font-size: 0.875rem;
+  }
+
+  &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+  }
+}

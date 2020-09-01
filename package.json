@@ -34,7 +34,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --open --no-cache --target app",
+    "start": "parcel src/js/index.js --port 1234 --no-cache --target app",
+    "start:html": "parcel index.html --port 1234 --open --no-cache --target app",
     "build": "parcel build index.html",
     "storybook": "parcel index.html --port 1337 --no-cache --target app"
   },
