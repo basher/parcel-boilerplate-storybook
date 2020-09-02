@@ -36,6 +36,10 @@ body {
     font-size: 0.875rem;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:disabled {
       cursor: not-allowed;
       opacity: 0.6;
