@@ -1,5 +1,6 @@
 :root {
   --brand-color: rebeccapurple;
+  --brand-color-alt: darkolivegreen;
 }
 
 body {
@@ -24,11 +25,11 @@ body {
   }
 
   &--primary {
-    color: rebeccapurple
+    color: var(--brand-color);
   }
 
   &--secondary {
-    color: darkolivegreen;
+    color: var(--brand-color-alt);
   }
 
   &--small {

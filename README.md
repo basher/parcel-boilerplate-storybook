@@ -2,13 +2,13 @@
 
 ## Boilerplate setup.
 
-Using Parcel bundler (instead of Webpack or Gulp) to handle
+Using Parcel bundler (instead of Webpack or Gulp) to manage:
 
 * ES6+ transpilation.
 * Sass.
 * PostCSS.
 
-Additionally, configured
+Also configured:
 
 * IE11 ponyfill for CSS variables.
 * ESLint, Stylelint, Prettier.
@@ -24,11 +24,7 @@ Additionally, configured
 * `npm run start:html` opens `index.html` in browser.
 * `npm run build` creates minified static assets with map files in `dist` folder.
 
-## Test Storybook - NOW OBSOLETE (TBC)?
+## Test Storybook
 
-* `npm run storybook`, which does NOT open the Storybook UI in the browser.
-* You need to also run storybook from the [Storybook preview wrapper repo](https://github.com/basher/parcel-boilerplate-storybook-preview) - see the `README` for instructions.
-
-### Open Storybook issues & discussions - NOW OBSOLETE (TBC)?
-* Ref: [validateDOMNesting bug](https://github.com/storybookjs/storybook/issues/12139).
-* Ref: [Storybook composition discussion](https://github.com/storybookjs/storybook/discussions/12103).
+* This repo was initially configured as a Storybook instance, to test Storybook standalone preview (v5) and Storybook composition (v6).
+* However, there are issues with using Parcel + Storybook, so now this repo is purely used to bundle static UI assets for consumption by [this storybook/html repo](https://github.com/basher/storybook-html).
