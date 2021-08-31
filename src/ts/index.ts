@@ -1,11 +1,13 @@
 import '../scss/index.scss';
-import cssVars from 'css-vars-ponyfill';
 import { browserSupportsAllFeatures } from './test';
 
-// eslint-disable-next-line no-console
+/* eslint-disable no-console */
 console.log(`Modern browser = ${browserSupportsAllFeatures()}`);
 
 if (!browserSupportsAllFeatures()) {
-    // CSS vars ponyfill for IE11.
-    cssVars();
+    // Require 'promise' for Parcel, then dynamic import polyfills, then instantiate UI modules.
+    require('core-js/es/promise');
+    import('./polyfills')
+        .then(() => console.log('Polyfills loaded'))
+        .catch(e => console.error(e));
 }
