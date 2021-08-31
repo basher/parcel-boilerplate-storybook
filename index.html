@@ -7,23 +7,33 @@
   <title>Parcel UI Storybook</title>
 </head>
 <body>
+  <!--
+    This HTML page can be viewed in browser by running this NPM script:
+
+      npm run start:html
+  -->
   <h1>Using Parcel to bundle UI</h1>
   <p>Testing...</p>
   <ul>
-    <li>ES6+ transpilation.</li>
+    <li>ES6+ and TypeScript transpilation.</li>
     <li>Sass with PostCSS.</li>
     <li>IE11 ponyfill for CSS variables.</li>
     <li>ESLint, Stylelint, Prettier.</li>
     <li>Git hooks.</li>
   </ul>
-  <button class="button button--text" type="button">Text button</button>
-  <div id="root"></div>
-  <script src="./storybook.ts"></script>
-  <div class="sb-errordisplay sb-wrapper">
-      <div id="error-message" class="sb-heading"></div>
-      <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>
-  </div>
+  <p>Open browser devtools console to see TypeScript output.</p>
+  <button class="button button--text button--primary" type="button">Primary button</button>
 
-  <script src="src/js/index.js"></script>
+  <!--
+    This HTML page is also used as a Node entry point for Parcel bundler in the NPM build script:
+
+        npm run build
+
+    This facilitates differential bundling using the module/nomodule pattern, generating 2 JavaScript bundles:
+
+      - Smaller bundle for modern browsers without transpiled ES6+ code.
+      - Larger bundle with ES5 transpiled code for older browsers.
+  -->
+  <script defer type="module" src="./src/ts/index.ts"></script>
 </body>
 </html>

@@ -4,27 +4,42 @@
 
 Using Parcel bundler (instead of Webpack or Gulp) to manage:
 
-* ES6+ transpilation.
-* Sass.
-* PostCSS.
+- ES6+ and TypeScript transpilation.
+- Sass.
+- PostCSS.
 
 Also configured:
 
-* IE11 ponyfill for CSS variables.
-* ESLint, Stylelint, Prettier.
-* Git hooks.
+- IE11 ponyfill for CSS variables.
+- ESLint, Stylelint, Prettier.
+- Git hooks.
 
 > Notes:
-> * Linter config files use recommended settings, plus some additional personal (opinionated) settings - e.g. `eslint-config-airbnb-base`.
-> * This repo is setup for raw JavaScript only - i.e. not TypeScript, or React/Angular/Vue.
+> - Linter config files use recommended settings, plus some additional personal (opinionated) settings - e.g. `eslint-config-airbnb-base`.
 
-## Test in browser, and build
+## Start Parcel, test UI in browser, and build production assets
 
-* `npm start` bundles static assets.
-* `npm run start:html` opens `index.html` in browser.
-* `npm run build` creates minified static assets with map files in `dist` folder.
+- `npm start` bundles static assets in `dist` folder.
+- `npm run start:html` opens `index.html` in browser.
+- `npm run build` creates minified static assets with map files in `dist/test-build` folder, including differential JavaScript bundling.
+
+### Differential bundling for JavaScript
+- See [this article](https://web.dev/publish-modern-javascript/) that explains how to ship modern JavaScript (ES6+) that is not transpiled to modern browsers, and transpiled ES5 to older browsers.
+- This is achieved by changing Node entry point in the build step in `package.json` to be `index.html`:
+```
+parcel build index.html ...
+```
+- This HTML file contains:
+```
+<script defer type="module" src="./src/js/index.js"></script>
+```
+- This allows Parcel to build 2 JavaScript bundles, which can then be referenced in our production HTML using 2 `<script>` tags:
+```
+<script defer type="module" src="[modern-bundle]"></script>
+<script defer nomodule src="[legacy-bundle]"></script>
+```
 
 ## Test Storybook
 
-* This repo was initially configured as a Storybook instance, to test Storybook standalone preview (v5) and Storybook composition (v6).
-* However, there are issues with using Parcel + Storybook, so now this repo is purely used to bundle static UI assets for consumption by [this storybook/html repo](https://github.com/basher/storybook-html).
+- There are issues with using Parcel + Storybook in the same repo.
+- So this repo is now solely used to bundle static UI assets for consumption by [this separate storybook/html repo](https://github.com/basher/storybook-html).
