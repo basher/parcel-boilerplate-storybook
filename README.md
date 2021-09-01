@@ -1,15 +1,19 @@
-# Use Parcel to bundle UI
+> ## Testing Storybook HTML components
+> - There are issues with using Parcel 2 + Storybook 6 in the same repo.
+> - Therefore, this repo is now solely used to bundle static UI assets for consumption by [this separate storybook/html repo](https://github.com/basher/storybook-html).
+
+# Using Parcel to bundle UI
 
 ## Boilerplate setup.
 
 Using Parcel bundler (instead of Webpack or Gulp) to manage:
 
 - ES6+ and TypeScript transpilation.
-- Sass.
-- PostCSS.
+- Sass and PostCSS.
 
 Also configured:
 
+- Polyfills dynamically imported for older browsers.
 - IE11 ponyfill for CSS variables.
 - ESLint, Stylelint, Prettier.
 - Git hooks.
@@ -38,8 +42,3 @@ parcel build index.html ...
 <script defer type="module" src="[modern-bundle]"></script>
 <script defer nomodule src="[legacy-bundle]"></script>
 ```
-
-## Test Storybook
-
-- There are issues with using Parcel + Storybook in the same repo.
-- So this repo is now solely used to bundle static UI assets for consumption by [this separate storybook/html repo](https://github.com/basher/storybook-html).
