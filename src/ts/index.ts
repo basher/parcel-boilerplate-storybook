@@ -1,7 +1,6 @@
 import '../scss/index.scss';
 import { browserSupportsAllFeatures } from './test';
 
-/* eslint-disable no-console */
 console.log(`Modern browser = ${browserSupportsAllFeatures()}`);
 
 if (!browserSupportsAllFeatures()) {
@@ -9,5 +8,5 @@ if (!browserSupportsAllFeatures()) {
     require('core-js/es/promise');
     import('./polyfills')
         .then(() => console.log('Polyfills loaded'))
-        .catch(e => console.error(e));
+        .catch((e) => console.error(e));
 }
