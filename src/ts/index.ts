@@ -1,6 +1,7 @@
 import '../scss/index.scss';
 import { browserSupportsAllFeatures } from './test';
 
+/* eslint-disable no-console */
 console.log(`Modern browser = ${browserSupportsAllFeatures()}`);
 
 if (!browserSupportsAllFeatures()) {

@@ -18,10 +18,17 @@ module.exports = {
   },
   plugins: ['prettier'], // Uses eslint-plugin-prettier.
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        'endOfLine': 'auto',
+      }
+    ],
     'import/prefer-default-export': 0,
     'import/extensions': 0,
     '@typescript-eslint/no-explicit-any': 0,
+    'no-console': 2,
+    'arrow-parens': 0,
     'no-unused-expressions': 0,
     'lines-between-class-members': [
       'error',
