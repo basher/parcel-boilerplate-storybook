@@ -25,17 +25,14 @@ Also configured:
 
 - `npm start` bundles static assets in `dist` folder.
 - `npm run start:html` opens `index.html` in browser.
-- `npm run build` creates minified static assets with map files in `dist/test-build` folder, including differential JavaScript bundling.
+- `npm run build` creates minified static assets with map files in `dist/test-build` folder, including differential JavaScript bundling (see below).
 
 ### Differential bundling for JavaScript
 - See [this article](https://web.dev/publish-modern-javascript/) that explains how to ship modern JavaScript (ES6+) that is not transpiled to modern browsers, and transpiled ES5 to older browsers.
-- This is achieved by changing Node entry point in the build step in `package.json` to be `index.html`:
-```
-parcel build index.html ...
-```
+- This is achieved by changing Node entry point in the build step in `package.json` to point to `index.html`.
 - This HTML file contains:
 ```
-<script defer type="module" src="./src/js/index.js"></script>
+<script defer type="module" src="./src/ts/index.ts"></script>
 ```
 - This allows Parcel to build 2 JavaScript bundles, which can then be referenced in our production HTML using 2 `<script>` tags:
 ```
