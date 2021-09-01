@@ -13,8 +13,8 @@ Using Parcel bundler (instead of Webpack or Gulp) to manage:
 
 Also configured:
 
-- Polyfills dynamically imported for older browsers.
-- IE11 ponyfill for CSS variables.
+- Polyfills dynamically imported in older browsers.
+- Ponyfill for CSS variables in older browsers.
 - ESLint, Stylelint, Prettier.
 - Git hooks.
 

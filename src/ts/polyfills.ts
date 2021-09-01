@@ -1,12 +1,12 @@
 import cssVars from 'css-vars-ponyfill';
 
-// CSS vars ponyfill for IE11.
+// CSS vars ponyfill in older browsers.
 cssVars();
 
-// 'objectFit' for images.
+// 'objectFit' for images in older browsers.
 if ('objectFit' in document.documentElement.style === false) {
     const images = document.querySelectorAll('img');
-    [...(images as any)].map(image => {
+    [...(images as any)].map((image) => {
         image.style.background = `url(${image.src}) no-repeat 50%`;
         image.style.backgroundSize = 'cover';
         image.src =
