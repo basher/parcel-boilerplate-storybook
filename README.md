@@ -19,7 +19,7 @@ Also configured:
 - Git hooks.
 
 > Notes:
-> - Linter config files use recommended settings, plus some additional personal (opinionated) settings - e.g. `eslint-config-airbnb-base`.
+> - Linter and Prettier config files use recommended settings, plus some additional personal (opinionated) settings.
 
 ## Start Parcel, test UI in browser, and build production assets
 
