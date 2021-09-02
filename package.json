@@ -9,7 +9,8 @@
   "dependencies": {
     "@swc/helpers": "^0.2.12",
     "core-js": "^3.16.4",
-    "css-vars-ponyfill": "^2.3.2"
+    "css-vars-ponyfill": "^2.3.2",
+    "domready": "^1.0.8"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0",
@@ -33,8 +34,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/ts/index.ts --port 1234 --no-hmr --target app",
-    "start:html": "parcel index.html --port 1234 --open --no-hmr --target app",
+    "start": "parcel src/ts/index.ts --port 1234 --target app",
+    "start:html": "parcel index.html --port 1234 --open --target app",
     "build": "parcel build index.html --dist-dir dist/test-build"
   },
   "husky": {
