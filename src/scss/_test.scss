@@ -2,6 +2,13 @@ body {
     color: var(--brand-color);
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
 // Test PostCSS autoprefixer.
 ::placeholder {
     color: var(--brand-color);
